@@ -1,0 +1,105 @@
+body {
+     background: #f8f8f8;
+     font-family: 'Arial', sans-serif;
+     margin: 0;
+     padding: 0;
+     color: #333;
+ }
+
+.sign-in-window {
+    max-width: 420px;
+    margin: 80px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.sign-in-window h1 {
+    color: #C80815;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #C80815;
+    box-shadow: 0 0 0 2px rgba(200, 8, 21, 0.15);
+}
+
+.error {
+    color: #e74c3c;
+    font-size: 0.9rem;
+    margin-top: 6px;
+    display: block;
+    text-align: left;
+}
+
+/* Кнопка входа */
+.sign-in-window button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: #C80815;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+.sign-in-window button[type="submit"]:hover {
+    background: #a50710;
+}
+
+.sign-in-window p {
+    margin-top: 25px;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.sign-in-window a {
+    color: #C80815;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.sign-in-window a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .sign-in-window {
+        margin: 40px 15px;
+        padding: 30px 20px;
+    }
+    .sign-in-window h1 {
+        font-size: 1.7rem;
+    }
+}
